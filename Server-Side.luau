@@ -86,7 +86,7 @@ end
 Players.PlayerAdded:Connect(function(player)
 	print("Loading data for", player.Name)
 
-	local universes = getUniversesByUserId(1553277233) -- pass someones player id
+	local universes = getUniversesByUserId(player.UserId) -- pass someones player id
 
 	print("Universes:", universes)
 
