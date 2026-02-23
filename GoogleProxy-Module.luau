@@ -19,7 +19,7 @@ end
 
 function HttpProxy:GetAsync(link)
 	local proxyUrl = url .. "?q=" .. HttpService:UrlEncode(link)
-	local data = JSONDecode(raw)
+	local data = JSONDecode(proxyUrl)
 
 	if data and data.result == "success" then
 		return data.response
